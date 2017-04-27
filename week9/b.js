@@ -17,4 +17,10 @@ var fruits = [
   {name: "grape", color: "purple"}
 ];
 
-var fruitsHash = fruits.reduce(function())
+var fruitsHash = fruits.reduce(function(acc, val) {
+  return acc[val.name] = val.color; 
+});
+
+console.log(fruitsHash);
+
+// TODO: finish

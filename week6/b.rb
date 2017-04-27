@@ -8,7 +8,8 @@
 # ```
 
 sentence = "You can live like a king but make sure it isn't a lie."
+/\bl[a-z]*\b/i
+p sentence.scan(/\bl[a-z]*\b/)
+# p sentence.scan(/\w{4}/)
 
-p sentence.scan(/\w+/) { |w| w }
-
-# skipping for now...
+# half complete. does the 4 letters but not the first letter.

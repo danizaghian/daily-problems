@@ -9,4 +9,6 @@
 
 sentence = "You can live like a king but make sure it isn't a lie."
 
-p sentence.gsub!(/^l[a-zA-Z]*$/, 'fake')
+p sentence.gsub!(/\bl[a-z]*\b/i, 'fake')
+
+# source for regex: https://stackoverflow.com/questions/2188819/strip-words-beginning-with-a-specific-letter-from-a-sentence-using-regex
