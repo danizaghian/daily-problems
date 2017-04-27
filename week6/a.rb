@@ -6,6 +6,6 @@
 # ```
 # "___ Clinton Lane, Wilkes Barre, PA _____"
 # ```
-address = "665 Clinton Lane, Wilkes Barre, PA 18702"
+# address = "665 Clinton Lane, Wilkes Barre, PA 18702"
 
 puts address.gsub!(/[0123456789]/, "_")

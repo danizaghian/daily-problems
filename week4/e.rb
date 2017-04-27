@@ -2,26 +2,12 @@
 
 def find_missing_letter(string)
   if string.empty?
-    missing_letters = ('a'..'z').to_a.join
+    missing_letters = ("a".."z").to_a
   else
-    letters = ('a'..'z').to_a
-    missing_letters = ""
-    split_string = string.chars
-    letter_index = letters.index(string[0])
-    previous_letter = split_string[0]
-    split_string.each do |letter|
-      unless letter == split_string[0]
-        unless letters.index(letter) == letter_index + 1
-          ((letters.index(previous_letter) + 1)..(letters.index(letter) - 1)).each do |index|
-            missing_letters += letters[index.to_i]
-          end
-        end
-      end
-      letter_index = letters.index(letter)
-      previous_letter = letter
-    end
+    alphabet = ("a".."z").to_a
+    missing_letters = alphabet[alphabet.index(string.split("").first)..alphabet.index(string.split("").last)]- string.split("")
   end
-  missing_letters.empty? ? nil : missing_letters
+  missing_letters.empty? ? nil : missing_letters.join
 end
 
 p find_missing_letter("orsv")  #=> "pqtu"
