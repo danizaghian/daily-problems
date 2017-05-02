@@ -19,9 +19,9 @@ var fruits = [
 
 var fruitsHash = {};
 
-for (i = 0; i < fruits.length; i++) {
-  fruitsHash[fruits[i].name] = fruits[i].color;
-}
+// for (i = 0; i < fruits.length; i++) {
+//   fruitsHash[fruits[i].name] = fruits[i].color;
+// }
 
 console.log(fruitsHash);
 
