@@ -1,6 +1,6 @@
 // Given an array of unsorted integers, find the largest two numbers. Try to solve the problem without sorting the array.
 
-var numbers = [10, 5, 42, 3, 4, 3, 5, 6];
+var numbers = [10, 5, 42, 42, 3, 4, 3, 5, 6];
 var largestNumber = 0;
 var secondLargestNumber = 0;
 

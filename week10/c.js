@@ -6,7 +6,7 @@ var findKthSmallest = function(array, number) {
   array.sort(function(a, b) {
     return a - b;
   });
-  return array[number];
+  return array[number - 1];
 };
 
-console.log(findKthSmallest(numbers, 3));
+console.log(findKthSmallest(numbers, 2));
