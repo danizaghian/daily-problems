@@ -1,20 +1,3 @@
-// Read about the JavaScript `sort` method. Then sort the following array of objects by age.
-// ```
-// people = [
-//   {name: "Saron", age: 34},
-//   {name: "Majora", age: 28},
-//   {name: "Danilo", age: 45}
-// ]
-// ```
+// Given an array of integers and a number, you need to write a program to find all elements in array whose sum is equal to the given number. Remember, array may contain both positive and negative numbers, so your solution should consider that.
 
-var people = [
-  {name: "Saron", age: 34},
-  {name: "Majora", age: 28},
-  {name: "Danilo", age: 45}
-];
-
-var sortByAge = people.sort(function(a, b) {
-  return a.age - b.age;
-});
-
-console.log(sortByAge);
+var array = [-1, 2, 3, 4, -5, 10, 23, 42]
